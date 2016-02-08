@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    march_hare (2.16.0-java)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  march_hare
+
+BUNDLED WITH
+   1.11.2

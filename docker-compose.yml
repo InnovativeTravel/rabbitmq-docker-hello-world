@@ -1,0 +1,16 @@
+rabbit:
+  image: rabbitmq
+server:
+  build: ./server
+  command: ruby server.rb
+  volumes:
+    - ./server:/server
+  links:
+    - rabbit
+client:
+  build: ./client
+  command: ruby client.rb
+  volumes:
+    - ./client:/client
+  links:
+    - rabbit
